@@ -1,0 +1,297 @@
+Plaintext = 0123456789ABCDEF
+Key = 133457799BBCDFF1
+PC1 = F0CCAAF556678F
+C0 = F0CCAAF D0 = 556678F
+C1 = E19955F D1 = AACCF1E K1 = 1B02EFFC7072
+C2 = C332ABF D2 = 5599E3D K2 = 79AED9DBC9E5
+C3 = 0CCAAFF D3 = 56678F5 K3 = 55FC8A42CF99
+C4 = 332ABFC D4 = 599E3D5 K4 = 72ADD6DB351D
+C5 = CCAAFF0 D5 = 6678F55 K5 = 7CEC07EB53A8
+C6 = 32ABFC3 D6 = 99E3D55 K6 = 63A53E507B2F
+C7 = CAAFF0C D7 = 678F556 K7 = EC84B7F618BC
+C8 = 2ABFC33 D8 = 9E3D559 K8 = F78A3AC13BFB
+C9 = 557F866 D9 = 3C7AAB3 K9 = E0DBEBEDE781
+C10 = 55FE199 D10 = F1EAACC K10 = B1F347BA464F
+C11 = 57F8665 D11 = C7AAB33 K11 = 215FD3DED386
+C12 = 5FE1995 D12 = 1EAACCF K12 = 7571F59467E9
+C13 = 7F86655 D13 = 7AAB33C K13 = 97C5D1FABA41
+C14 = FE19955 D14 = EAACCF1 K14 = 5F43B7F2E73A
+C15 = F866557 D15 = AAB33C7 K15 = BF918D3D3F0A
+C16 = F0CCAAF D16 = 556678F K16 = CB3D8B0E17F5
+IP = CC00CCFFF0AAF0AA
+L0 = CC00CCFF R0 = F0AAF0AA
+
+Vong 1
+K = 1B02EFFC7072
+E(R) = 7A15557A1555
+E(R) XOR K = 6117BA866527
+S1: 011000 -> hang 0, cot 12 -> 0101
+S2: 010001 -> hang 1, cot 8 -> 1100
+S3: 011110 -> hang 0, cot 15 -> 1000
+S4: 111010 -> hang 2, cot 13 -> 0010
+S5: 100001 -> hang 3, cot 0 -> 1011
+S6: 100110 -> hang 2, cot 3 -> 0101
+S7: 010100 -> hang 0, cot 10 -> 1001
+S8: 100111 -> hang 3, cot 3 -> 0111
+S-box = 5C82B597
+P = 234AA9BB
+L1 = F0AAF0AA
+R1 = EF4A6544
+
+Vong 2
+K = 79AED9DBC9E5
+E(R) = 75EA5430AA09
+E(R) XOR K = 0C448DEB63EC
+S1: 000011 -> hang 1, cot 1 -> 1111
+S2: 000100 -> hang 0, cot 2 -> 1000
+S3: 010010 -> hang 0, cot 9 -> 1101
+S4: 001101 -> hang 1, cot 6 -> 0000
+S5: 111010 -> hang 2, cot 13 -> 0011
+S6: 110110 -> hang 2, cot 11 -> 1010
+S7: 001111 -> hang 1, cot 7 -> 1010
+S8: 101100 -> hang 2, cot 6 -> 1110
+S-box = F8D03AAE
+P = 3CAB87A3
+L2 = EF4A6544
+R2 = CC017709
+
+Vong 3
+K = 55FC8A42CF99
+E(R) = E58002BAE853
+E(R) XOR K = B07C88F827CA
+S1: 101100 -> hang 2, cot 6 -> 0010
+S2: 000111 -> hang 1, cot 3 -> 0111
+S3: 110010 -> hang 2, cot 9 -> 0001
+S4: 001000 -> hang 0, cot 4 -> 0000
+S5: 111110 -> hang 2, cot 15 -> 1110
+S6: 000010 -> hang 0, cot 1 -> 0001
+S7: 011111 -> hang 1, cot 15 -> 0110
+S8: 001010 -> hang 0, cot 5 -> 1111
+S-box = 2710E16F
+P = 4D166EB0
+L3 = CC017709
+R3 = A25C0BF4
+
+Vong 4
+K = 72ADD6DB351D
+E(R) = 5042F8057FA9
+E(R) XOR K = 22EF2EDE4AB4
+S1: 001000 -> hang 0, cot 4 -> 0010
+S2: 101110 -> hang 2, cot 7 -> 0001
+S3: 111100 -> hang 2, cot 14 -> 1110
+S4: 101110 -> hang 2, cot 7 -> 1101
+S5: 110111 -> hang 3, cot 11 -> 1001
+S6: 100100 -> hang 2, cot 2 -> 1111
+S7: 101010 -> hang 2, cot 5 -> 0011
+S8: 110100 -> hang 2, cot 10 -> 1010
+S-box = 21ED9F3A
+P = BB23774C
+L4 = A25C0BF4
+R4 = 77220045
+
+Vong 5
+K = 7CEC07EB53A8
+E(R) = BAE90400020A
+E(R) XOR K = C60503EB51A2
+S1: 110001 -> hang 3, cot 8 -> 0101
+S2: 100000 -> hang 2, cot 0 -> 0000
+S3: 010100 -> hang 0, cot 10 -> 1100
+S4: 000011 -> hang 1, cot 1 -> 1000
+S5: 111010 -> hang 2, cot 13 -> 0011
+S6: 110101 -> hang 3, cot 10 -> 0001
+S7: 000110 -> hang 0, cot 3 -> 1110
+S8: 100010 -> hang 2, cot 1 -> 1011
+S-box = 50C831EB
+P = 2813ADC3
+L5 = 77220045
+R5 = 8A4FA637
+
+Vong 6
+K = 63A53E507B2F
+E(R) = C5425FD0C1AF
+E(R) XOR K = A6E76180BA80
+S1: 101001 -> hang 3, cot 4 -> 0100
+S2: 101110 -> hang 2, cot 7 -> 0001
+S3: 011101 -> hang 1, cot 14 -> 1111
+S4: 100001 -> hang 3, cot 0 -> 0011
+S5: 100000 -> hang 2, cot 0 -> 0100
+S6: 001011 -> hang 1, cot 5 -> 1100
+S7: 101010 -> hang 2, cot 5 -> 0011
+S8: 000000 -> hang 0, cot 0 -> 1101
+S-box = 41F34C3D
+P = 9E45CD2C
+L6 = 8A4FA637
+R6 = E967CD69
+
+Vong 7
+K = EC84B7F618BC
+E(R) = F52B0FE5AB53
+E(R) XOR K = 19AFB813B3EF
+S1: 000110 -> hang 0, cot 3 -> 0001
+S2: 011010 -> hang 0, cot 13 -> 0000
+S3: 111110 -> hang 2, cot 15 -> 0111
+S4: 111000 -> hang 2, cot 12 -> 0101
+S5: 000100 -> hang 0, cot 2 -> 0100
+S6: 111011 -> hang 3, cot 13 -> 0000
+S7: 001111 -> hang 1, cot 7 -> 1010
+S8: 101111 -> hang 3, cot 7 -> 1101
+S-box = 107540AD
+P = 8C051C27
+L7 = E967CD69
+R7 = 064ABA10
+
+Vong 8
+K = F78A3AC13BFB
+E(R) = 00C2555F40A0
+E(R) XOR K = F7486F9E7B5B
+S1: 111101 -> hang 3, cot 14 -> 0110
+S2: 110100 -> hang 2, cot 10 -> 1100
+S3: 100001 -> hang 3, cot 0 -> 0001
+S4: 101111 -> hang 3, cot 7 -> 1000
+S5: 100111 -> hang 3, cot 3 -> 0111
+S6: 100111 -> hang 3, cot 3 -> 1100
+S7: 101101 -> hang 3, cot 6 -> 1010
+S8: 011011 -> hang 1, cot 13 -> 1110
+S-box = 6C187CAE
+P = 3C0E86F9
+L8 = 064ABA10
+R8 = D5694B90
+
+Vong 9
+K = E0DBEBEDE781
+E(R) = 6AAB52A57CA1
+E(R) XOR K = 8A70B9489B20
+S1: 100010 -> hang 2, cot 1 -> 0001
+S2: 100111 -> hang 3, cot 3 -> 0001
+S3: 000010 -> hang 0, cot 1 -> 0000
+S4: 111001 -> hang 3, cot 12 -> 1100
+S5: 010010 -> hang 0, cot 9 -> 0101
+S6: 001001 -> hang 1, cot 4 -> 0111
+S7: 101100 -> hang 2, cot 6 -> 0111
+S8: 100000 -> hang 2, cot 0 -> 0111
+S-box = 110C5777
+P = 22367C6A
+L9 = D5694B90
+R9 = 247CC67A
+
+Vong 10
+K = B1F347BA464F
+E(R) = 1083F960C3F4
+E(R) XOR K = A170BEDA85BB
+S1: 101000 -> hang 2, cot 4 -> 1101
+S2: 010111 -> hang 1, cot 11 -> 1010
+S3: 000010 -> hang 0, cot 1 -> 0000
+S4: 111110 -> hang 2, cot 15 -> 0100
+S5: 110110 -> hang 2, cot 11 -> 0101
+S6: 101000 -> hang 2, cot 4 -> 0010
+S7: 010110 -> hang 0, cot 11 -> 0111
+S8: 111011 -> hang 3, cot 13 -> 0101
+S-box = DA045275
+P = 62BC9C22
+L10 = 247CC67A
+R10 = B7D5D7B2
+
+Vong 11
+K = 215FD3DED386
+E(R) = 5AFEABEAFDA5
+E(R) XOR K = 7BA178342E23
+S1: 011110 -> hang 0, cot 15 -> 0111
+S2: 111010 -> hang 2, cot 13 -> 0011
+S3: 000101 -> hang 1, cot 2 -> 0000
+S4: 111000 -> hang 2, cot 12 -> 0101
+S5: 001101 -> hang 1, cot 6 -> 1101
+S6: 000010 -> hang 0, cot 1 -> 0001
+S7: 111000 -> hang 2, cot 12 -> 0000
+S8: 100011 -> hang 3, cot 1 -> 0001
+S-box = 7305D101
+P = E104FA02
+L11 = B7D5D7B2
+R11 = C5783C78
+
+Vong 12
+K = 7571F59467E9
+E(R) = 60ABF01F83F1
+E(R) XOR K = 15DA058BE418
+S1: 000101 -> hang 1, cot 2 -> 0111
+S2: 011101 -> hang 1, cot 14 -> 1011
+S3: 101000 -> hang 2, cot 4 -> 1000
+S4: 000101 -> hang 1, cot 2 -> 1011
+S5: 100010 -> hang 2, cot 1 -> 0010
+S6: 111110 -> hang 2, cot 15 -> 0110
+S7: 010000 -> hang 0, cot 8 -> 0011
+S8: 011000 -> hang 0, cot 12 -> 0101
+S-box = 7B8B2635
+P = C268CFEA
+L12 = C5783C78
+R12 = 75BD1858
+
+Vong 13
+K = 97C5D1FABA41
+E(R) = 3ABDFA8F02F0
+E(R) XOR K = AD782B75B8B1
+S1: 101011 -> hang 3, cot 5 -> 1001
+S2: 010111 -> hang 1, cot 11 -> 1010
+S3: 100000 -> hang 2, cot 0 -> 1101
+S4: 101011 -> hang 3, cot 5 -> 0001
+S5: 011101 -> hang 1, cot 14 -> 1000
+S6: 011011 -> hang 1, cot 13 -> 1011
+S7: 100010 -> hang 2, cot 1 -> 0100
+S8: 110001 -> hang 3, cot 8 -> 1111
+S-box = 9AD18B4F
+P = DDBB2922
+L13 = 75BD1858
+R13 = 18C3155A
+
+Vong 14
+K = 5F43B7F2E73A
+E(R) = 0F16068AAAF4
+E(R) XOR K = 5055B1784DCE
+S1: 010100 -> hang 0, cot 10 -> 0110
+S2: 000101 -> hang 1, cot 2 -> 0100
+S3: 010110 -> hang 0, cot 11 -> 0111
+S4: 110001 -> hang 3, cot 8 -> 1001
+S5: 011110 -> hang 0, cot 15 -> 1001
+S6: 000100 -> hang 0, cot 2 -> 1010
+S7: 110111 -> hang 3, cot 11 -> 1111
+S8: 001110 -> hang 0, cot 7 -> 0001
+S-box = 64799AF1
+P = B7318E55
+L14 = 18C3155A
+R14 = C28C960D
+
+Vong 15
+K = BF918D3D3F0A
+E(R) = E054594AC05B
+E(R) XOR K = 5FC5D477FF51
+S1: 010111 -> hang 1, cot 11 -> 1011
+S2: 111100 -> hang 2, cot 14 -> 0010
+S3: 010111 -> hang 1, cot 11 -> 1110
+S4: 010100 -> hang 0, cot 10 -> 1000
+S5: 011101 -> hang 1, cot 14 -> 1000
+S6: 111111 -> hang 3, cot 15 -> 1101
+S7: 111101 -> hang 3, cot 14 -> 0011
+S8: 010001 -> hang 1, cot 8 -> 1100
+S-box = B2E88D3C
+P = 5B81276E
+L15 = C28C960D
+R15 = 43423234
+
+Vong 16
+K = CB3D8B0E17F5
+E(R) = 206A041A41A8
+E(R) XOR K = EB578F14565D
+S1: 111010 -> hang 2, cot 13 -> 1010
+S2: 110101 -> hang 3, cot 10 -> 0111
+S3: 011110 -> hang 0, cot 15 -> 1000
+S4: 001111 -> hang 1, cot 7 -> 0011
+S5: 000101 -> hang 1, cot 2 -> 0010
+S6: 000101 -> hang 1, cot 2 -> 0100
+S7: 011001 -> hang 1, cot 12 -> 0010
+S8: 011101 -> hang 1, cot 14 -> 1001
+S-box = A7832429
+P = C8C04F98
+L16 = 43423234
+R16 = 0A4CD995
+R16 || L16 = 0A4CD99543423234
+Ciphertext = 85E813540F0AB405
+Kiem tra: PASS
